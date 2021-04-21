@@ -3,6 +3,7 @@
 Super-easy WordPress plugin boilerplate which you can use to develop your own plugin for WordPress.
 
 **Features:**
+
 - Easy to get started
 - Clean and well-commented object-oriented code
 - Developed using best WordPress practices
@@ -10,6 +11,7 @@ Super-easy WordPress plugin boilerplate which you can use to develop your own pl
 - Useful modules are included
 
 **Included Modules:**
+
 - Custom Database Tables with CRUD (Create, Read, Update, Delete) feature
 - Custom Taxonomies and Custom Post Types
 - AJAX
@@ -19,16 +21,17 @@ Super-easy WordPress plugin boilerplate which you can use to develop your own pl
 - Frontend Widgets
 
 **Coming soon:**
+
 - Admin Dashboard Widgets
 - Guides and How-to Manuals
-
 
 ## Usage
 
 ### Installation
+
 ```
 cd wp-content/plugins
-git clone https://github.com/maxkostinevich/wp-plugin-starter-kit.git your-plugin-name
+git clone https://github.com/andBrandCo/WP-Plugin-Starter-Kit.git your-plugin-name
 cd your-plugin-name
 rm -rf .git
 rm README.md
@@ -36,10 +39,12 @@ npm install --only=dev
 ```
 
 **IMPORTANT STEPS BEFORE PROCEED**
+
 - 1. Change Application Name and Author in **package.json**
 - 2. Edit pluginConfig var in **gulpfile.js**: change plugin name, plugin slug, author, etc.
 
 ### Scaffold your project
+
 ```
 // this command will replace plugin variables and rename plugin files according to values defined in the pluginConfig (see gulpfile.js)
 
@@ -47,7 +52,9 @@ gulp bootstrap
 ```
 
 ### Build
+
 Build task will copy plugin files into **wp-content/plugins/your-plugin-name/build/** folder and minify css and js files
+
 ```
 gulp build:plugin // build project (see wp-content/plugins/your-plugin-name/build/ folder)
 gulp build:archive // create ZIP archive from ../your-plugin-name/ folder (see /build/ folder)
@@ -55,17 +62,16 @@ gulp build // build project and create ZIP archive
 ```
 
 ## Changelog
+
 ...
 v2.3.1 March 18, 2020
-** FIXES **
-    - Fixed meta boxes class not saving
+** FIXES ** - Fixed meta boxes class not saving
 ...
 
 ...
 v2.3.0 August 23, 2018
-** NEW **
-    - Added Meta boxes class
-    - Added frontend widget class
+** NEW ** - Added Meta boxes class - Added frontend widget class
+
 ```
 ...
 v2.2.1 - May 24, 2016
@@ -83,7 +89,7 @@ v2.2.0 - Apr 07, 2016
     - Setting field: HTML
     - Setting field: Text field with media-uploader button
     - /.assets/ folder could be used to store plugin sources (psd, svg-fonts, etc)
-    
+
 ** Updates **
     - Admin class has been splitted
     - Plugin_Name_Public class has been renamed to Plugin_Name and moved to /includes/ folder
@@ -126,4 +132,5 @@ v1.0.0 - Dec 16, 2015
 ```
 
 ## [GPL-2.0+ License](http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+
 (c) 2015 - 2016 [Max Kostinevich](https://maxkostinevich.com) - All rights reserved.
